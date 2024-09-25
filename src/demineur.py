@@ -82,6 +82,6 @@ class Demineur:
 
 
 if __name__ == "__main__":
-    difficulte = input("Choisissez un niveau de difficulte (facile, moyen, difficile): ")
-    jeu = Demineur(difficulte)
+    niveau_difficulte = input("Choisissez un niveau de difficulte (facile, moyen, difficile): ")
+    jeu = Demineur(niveau_difficulte)
     jeu.jouer()

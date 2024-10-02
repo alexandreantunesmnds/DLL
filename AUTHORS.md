@@ -9,4 +9,5 @@
 - Billy, LeGoat, billy.legoat@testpascetteadresse.fr
 - Rami, GOUAL, etudes.ramigoual@gmail.fr
 - Samy FERGUI, samy.fergui.pro@gmail.com
+- Alexandre ANTUNES, antunesmendes.alexandre@gmail.com
 

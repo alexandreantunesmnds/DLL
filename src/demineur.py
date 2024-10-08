@@ -9,7 +9,11 @@ class Demineur:
         Initialize the game with a grid and place mines based on difficulty level.
 
         :param difficulte: Difficulty level of the game ('facile', 'moyen', 'difficile').
+        :raises ValueError: If the difficulty level is not one of 'facile', 'moyen', or 'difficile'.
         """
+        if difficulte not in ['facile', 'moyen', 'difficile']:
+            raise ValueError("Le niveau de difficulté doit être 'facile', 'moyen' ou 'difficile'.")
+
         if difficulte == 'facile':
             self.taille = 8
             self.nombre_mines = 10
@@ -91,5 +95,8 @@ class Demineur:
 
 if __name__ == "__main__":
     niveau_difficulte = input("Choisissez un niveau de difficulte (facile, moyen, difficile): ")
-    jeu = Demineur(niveau_difficulte)
-    jeu.jouer()
+    try:
+        jeu = Demineur(niveau_difficulte)
+        jeu.jouer()
+    except ValueError as e:
+        print(e)
